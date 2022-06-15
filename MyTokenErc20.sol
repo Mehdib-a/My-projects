@@ -8,3 +8,4 @@ contract MyERC20token is ERC20 {
         _mint(msg.sender , myTotalsupply);
     }
 }
+//This is the easiest way to create a token.
