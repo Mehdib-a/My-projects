@@ -221,13 +221,13 @@ contract SruToken is Context, IBEP20, Ownable {
         address receipient,
         uint256 amount
     ) internal {
-        uint256 mande = amount ; //- (amount / 100); // stebghe senarioye feli: 10000 - (10000 / 100) = 9900
+        uint256 remains = amount ; //- (amount / 100); // stebghe senarioye feli: 10000 - (10000 / 100) = 9900
         require(sender != address(0), "transfer from zero address");
         require(receipient != address(0), "transfer to zero addres");
         _balances[sender] = _balances[sender] - amount;
-        _balances[receipient] = _balances[receipient] + mande;
+        _balances[receipient] = _balances[receipient] + remains;
         _totalsupply = _totalsupply; //- (amount / 100);
-        emit Transfer(sender, receipient, mande);
+        emit Transfer(sender, receipient, remains);
     }
 
     function transferFrom(
