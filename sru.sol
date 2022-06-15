@@ -1,4 +1,7 @@
 # My-projects
+//This is a basic way to make a standard token.
+//This token was written for Shahid Rajaei University and we are currently building a payment network with the university token.
+
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
