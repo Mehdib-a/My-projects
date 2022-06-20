@@ -1,8 +1,8 @@
-//https://ropsten.etherscan.io/token/0xc164bdaf776f1de0d8cd868f4632365ed1ec3aff
+//https://ropsten.etherscan.io/token/0xd27d8471e5984e1b169eaed1c1912c1964d215e0
 
 
 
-// SPDX-License-Identifier: MPL-2.0
+// SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
 interface IBEP20 {
