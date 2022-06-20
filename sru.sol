@@ -1,4 +1,4 @@
-//https://ropsten.etherscan.io/token/0xd27d8471e5984e1b169eaed1c1912c1964d215e0
+//https://ropsten.etherscan.io/address/0xd27d8471e5984e1b169eaed1c1912c1964d215e0#code
 
 
 
