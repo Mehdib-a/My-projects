@@ -1,8 +1,8 @@
-# My-projects
-//This is a basic way to make a standard token.
-//This token was written for Shahid Rajaei University and we are currently building a payment network with the university token.
+//https://ropsten.etherscan.io/token/0xc164bdaf776f1de0d8cd868f4632365ed1ec3aff
 
-// SPDX-License-Identifier: MIT
+
+
+// SPDX-License-Identifier: MPL-2.0
 pragma solidity >=0.4.22 <0.9.0;
 
 interface IBEP20 {
@@ -221,13 +221,13 @@ contract SruToken is Context, IBEP20, Ownable {
         address receipient,
         uint256 amount
     ) internal {
-        uint256 remains = amount ; //- (amount / 100); // stebghe senarioye feli: 10000 - (10000 / 100) = 9900
+        uint256 mande = amount ; //- (amount / 100); // stebghe senarioye feli: 10000 - (10000 / 100) = 9900
         require(sender != address(0), "transfer from zero address");
         require(receipient != address(0), "transfer to zero addres");
         _balances[sender] = _balances[sender] - amount;
-        _balances[receipient] = _balances[receipient] + remains;
+        _balances[receipient] = _balances[receipient] + mande;
         _totalsupply = _totalsupply; //- (amount / 100);
-        emit Transfer(sender, receipient, remains);
+        emit Transfer(sender, receipient, mande);
     }
 
     function transferFrom(
